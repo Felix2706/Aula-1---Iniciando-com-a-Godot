@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cbidntp3yopin" path="res://chão.png" id="1_mf2r2"]
 [ext_resource type="PackedScene" uid="uid://b0a31m1a1d5nv" path="res://scenes/player.tscn" id="2_bjaf4"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mf2r2"]
-distance = -88.988434
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mf2r2"]
+size = Vector2(250, 183)
 
 [node name="Node2D" type="Node2D" unique_id=936695506]
 
@@ -20,8 +20,13 @@ position = Vector2(210, 186)
 scale = Vector2(0.20040485, 0.1524356)
 texture = ExtResource("1_mf2r2")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=950601066]
+position = Vector2(210, 192)
+shape = SubResource("RectangleShape2D_mf2r2")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1729096563]
-shape = SubResource("WorldBoundaryShape2D_mf2r2")
+position = Vector2(-177, 188.5)
+shape = SubResource("RectangleShape2D_mf2r2")
 
 [node name="Player" parent="." unique_id=506168754 instance=ExtResource("2_bjaf4")]
-position = Vector2(-2, -4)
+position = Vector2(-133, 4)

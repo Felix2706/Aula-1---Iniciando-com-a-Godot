@@ -1,7 +1,71 @@
 [gd_scene format=3 uid="uid://b0a31m1a1d5nv"]
 
 [ext_resource type="Script" uid="uid://dbtk761ntvlyr" path="res://script/irelia.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://bg85m851ehflx" path="res://irelia-removebg-preview.png" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://bgmrrda5xp0ne" path="res://Spritesheet.png" id="2_g2els"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
+atlas = ExtResource("2_g2els")
+region = Rect2(161, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
+atlas = ExtResource("2_g2els")
+region = Rect2(322, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
+atlas = ExtResource("2_g2els")
+region = Rect2(483, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
+atlas = ExtResource("2_g2els")
+region = Rect2(644, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
+atlas = ExtResource("2_g2els")
+region = Rect2(805, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
+atlas = ExtResource("2_g2els")
+region = Rect2(966, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
+atlas = ExtResource("2_g2els")
+region = Rect2(1127, 150, 161, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
+atlas = ExtResource("2_g2els")
+region = Rect2(1288, 150, 161, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d2wvv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhqgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dqkch")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlg0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuyoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjrip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smehm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur7pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4r1p")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 12.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
 size = Vector2(53, 63)
@@ -9,10 +73,10 @@ size = Vector2(53, 63)
 [node name="Player" type="CharacterBody2D" unique_id=506168754]
 script = ExtResource("1_onrkg")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=132272581]
-position = Vector2(0.9999976, 0.7516022)
-scale = Vector2(0.57894737, 0.5899959)
-texture = ExtResource("2_i3pqv")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=719594781]
+sprite_frames = SubResource("SpriteFrames_d2wvv")
+animation = &"walk"
+frame_progress = 0.4203205
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2014944344]
 position = Vector2(0.894928, -7.434784)
