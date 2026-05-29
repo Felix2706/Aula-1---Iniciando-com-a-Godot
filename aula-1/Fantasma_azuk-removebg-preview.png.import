@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgmrrda5xp0ne"
-path="res://.godot/imported/Spritesheet.png-a2c2115bda14ee20f2c9865f0f7efe52.ctex"
+uid="uid://br5worw18v5xy"
+path="res://.godot/imported/Fantasma_azuk-removebg-preview.png-157193b5bbe757101e1317278304177d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Spritesheet.png"
-dest_files=["res://.godot/imported/Spritesheet.png-a2c2115bda14ee20f2c9865f0f7efe52.ctex"]
+source_file="res://Fantasma_azuk-removebg-preview.png"
+dest_files=["res://.godot/imported/Fantasma_azuk-removebg-preview.png-157193b5bbe757101e1317278304177d.ctex"]
 
 [params]
 
