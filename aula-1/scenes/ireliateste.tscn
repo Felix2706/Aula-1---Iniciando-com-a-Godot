@@ -2911,3 +2911,6 @@ position = Vector2(76, -83)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=2088268019]
 shape = SubResource("WorldBoundaryShape2D_wjee1")
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=1520741346]
+position = Vector2(-236, 34)
