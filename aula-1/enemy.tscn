@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://o827qtdhhx0c"]
+
+[ext_resource type="Texture2D" uid="uid://dc4wibs4jmphp" path="res://assets/kenney_platformer-art-deluxe/Base pack/Enemies/slimeWalk1.png" id="1_4gyqm"]
+[ext_resource type="Script" uid="uid://b5alx2xg3eng0" path="res://enemy.gd" id="1_qi2p4"]
+[ext_resource type="Texture2D" uid="uid://d3870a8ve1l4a" path="res://assets/kenney_platformer-art-deluxe/Base pack/Enemies/slimeWalk2.png" id="2_qi2p4"]
+[ext_resource type="PackedScene" uid="uid://dva1x78wyypc4" path="res://killzone.tscn" id="4_iifgy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iifgy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4gyqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qi2p4")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_epg4t"]
+radius = 13.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epg4t"]
+size = Vector2(43, 20)
+
+[node name="Node2D" type="Node2D" unique_id=1950707282]
+
+[node name="enemy" type="CharacterBody2D" parent="." unique_id=1519724556]
+script = ExtResource("1_qi2p4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enemy" unique_id=1266772198]
+sprite_frames = SubResource("SpriteFrames_iifgy")
+animation = &"walk"
+frame_progress = 0.2691858
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy" unique_id=1319689317]
+position = Vector2(-7, 1)
+scale = Vector2(0.965, 0.965)
+shape = SubResource("CircleShape2D_epg4t")
+
+[node name="FloorLeft" type="RayCast2D" parent="enemy" unique_id=2005517168]
+target_position = Vector2(-23, 19)
+
+[node name="FloorRight" type="RayCast2D" parent="enemy" unique_id=2031441479]
+target_position = Vector2(23, 18)
+
+[node name="killzone" parent="enemy" unique_id=248487223 instance=ExtResource("4_iifgy")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy/killzone" unique_id=1877793483]
+position = Vector2(-2.5, 3)
+shape = SubResource("RectangleShape2D_epg4t")
