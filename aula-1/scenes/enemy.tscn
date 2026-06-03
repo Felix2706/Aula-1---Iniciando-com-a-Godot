@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://o827qtdhhx0c"]
 
 [ext_resource type="Texture2D" uid="uid://dc4wibs4jmphp" path="res://assets/kenney_platformer-art-deluxe/Base pack/Enemies/slimeWalk1.png" id="1_4gyqm"]
-[ext_resource type="Script" uid="uid://b5alx2xg3eng0" path="res://enemy.gd" id="1_qi2p4"]
+[ext_resource type="Script" uid="uid://b5alx2xg3eng0" path="res://script/enemy.gd" id="1_qi2p4"]
 [ext_resource type="Texture2D" uid="uid://d3870a8ve1l4a" path="res://assets/kenney_platformer-art-deluxe/Base pack/Enemies/slimeWalk2.png" id="2_qi2p4"]
-[ext_resource type="PackedScene" uid="uid://dva1x78wyypc4" path="res://killzone.tscn" id="4_iifgy"]
+[ext_resource type="PackedScene" uid="uid://dva1x78wyypc4" path="res://scenes/killzone.tscn" id="4_iifgy"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iifgy"]
 animations = [{

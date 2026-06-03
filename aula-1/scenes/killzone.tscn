@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dva1x78wyypc4"]
 
-[ext_resource type="Script" uid="uid://bacvabrmrq7do" path="res://killzone.gd" id="1_3brf5"]
+[ext_resource type="Script" uid="uid://bacvabrmrq7do" path="res://script/killzone.gd" id="1_3brf5"]
+
 
 [node name="killzone" type="Area2D" unique_id=248487223]
 script = ExtResource("1_3brf5")

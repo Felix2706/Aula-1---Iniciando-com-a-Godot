@@ -7,8 +7,9 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.name == "Player":
-		speed_collected.emit(body)  # passa o próprio player como argumento
+		speed_collected.emit(body)  
 		$Sprite2D.visible = false
 		$CollisionShape2D.set_deferred("disabled", true)
+		$particulas.emitting = true
 		await $particulas.finished
 		queue_free()

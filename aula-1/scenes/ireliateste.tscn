@@ -1,10 +1,12 @@
 [gd_scene format=4 uid="uid://dme8ylc38e0i8"]
 
+[ext_resource type="Script" uid="uid://dmc373dtki1jt" path="res://scenes/level.gd" id="1_phomi"]
 [ext_resource type="PackedScene" uid="uid://b0a31m1a1d5nv" path="res://scenes/player.tscn" id="2_bjaf4"]
 [ext_resource type="Texture2D" uid="uid://dg8vrgrorvkbh" path="res://assets/kenney_platformer-art-deluxe/Base pack/Tiles/tiles_spritesheet.png" id="2_mf2r2"]
-[ext_resource type="PackedScene" uid="uid://o827qtdhhx0c" path="res://enemy.tscn" id="3_m74v2"]
-[ext_resource type="PackedScene" uid="uid://dva1x78wyypc4" path="res://killzone.tscn" id="4_c1foy"]
-[ext_resource type="PackedScene" uid="uid://c8n7xjj5dbb0t" path="res://coin.tscn" id="5_wjee1"]
+[ext_resource type="PackedScene" uid="uid://o827qtdhhx0c" path="res://scenes/enemy.tscn" id="3_m74v2"]
+[ext_resource type="PackedScene" uid="uid://dva1x78wyypc4" path="res://scenes/killzone.tscn" id="4_c1foy"]
+[ext_resource type="PackedScene" uid="uid://c8n7xjj5dbb0t" path="res://scenes/coin.tscn" id="5_wjee1"]
+[ext_resource type="PackedScene" uid="uid://dswk0n3wmyisx" path="res://scenes/powerup_speed.tscn" id="6_gjn7q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phomi"]
 texture = ExtResource("2_mf2r2")
@@ -11843,6 +11845,7 @@ sources/0 = SubResource("TileSetAtlasSource_c1foy")
 distance = -283.0
 
 [node name="Node2D" type="Node2D" unique_id=936695506]
+script = ExtResource("1_phomi")
 
 [node name="Player" parent="." unique_id=506168754 instance=ExtResource("2_bjaf4")]
 position = Vector2(-133, 4)
@@ -11880,3 +11883,6 @@ position = Vector2(-234, 32)
 
 [node name="Coin" parent="." unique_id=144094959 instance=ExtResource("5_wjee1")]
 position = Vector2(73, -145)
+
+[node name="powerup_speed" parent="." unique_id=311839853 instance=ExtResource("6_gjn7q")]
+position = Vector2(153, 42)

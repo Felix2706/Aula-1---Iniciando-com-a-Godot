@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbidntp3yopin"
-path="res://.godot/imported/chão.png-e622701262f84723de32f4fc9ad544f5.ctex"
+uid="uid://br5worw18v5xy"
+path="res://.godot/imported/Fantasma_azuk-removebg-preview.png-b3797a3a53ead8218ffa1dda008ee5c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://chão.png"
-dest_files=["res://.godot/imported/chão.png-e622701262f84723de32f4fc9ad544f5.ctex"]
+source_file="res://assets/Fantasma_azuk-removebg-preview.png"
+dest_files=["res://.godot/imported/Fantasma_azuk-removebg-preview.png-b3797a3a53ead8218ffa1dda008ee5c1.ctex"]
 
 [params]
 

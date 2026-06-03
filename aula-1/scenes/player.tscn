@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://b0a31m1a1d5nv"]
 
 [ext_resource type="Script" uid="uid://dbtk761ntvlyr" path="res://script/irelia.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://br5worw18v5xy" path="res://Fantasma_azuk-removebg-preview.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://br5worw18v5xy" path="res://assets/Fantasma_azuk-removebg-preview.png" id="2_g2els"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("2_g2els")
