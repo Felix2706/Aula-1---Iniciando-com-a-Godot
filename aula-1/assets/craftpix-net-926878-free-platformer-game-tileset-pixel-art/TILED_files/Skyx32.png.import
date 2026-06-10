@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbidntp3yopin"
-path="res://.godot/imported/chão.png-6501188455c106289fc63168c434819b.ctex"
+uid="uid://dmjfdjn0bb0tx"
+path="res://.godot/imported/Skyx32.png-d19f2a525e790edc2aa775e9fbde9a73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chão.png"
-dest_files=["res://.godot/imported/chão.png-6501188455c106289fc63168c434819b.ctex"]
+source_file="res://assets/craftpix-net-926878-free-platformer-game-tileset-pixel-art/TILED_files/Skyx32.png"
+dest_files=["res://.godot/imported/Skyx32.png-d19f2a525e790edc2aa775e9fbde9a73.ctex"]
 
 [params]
 

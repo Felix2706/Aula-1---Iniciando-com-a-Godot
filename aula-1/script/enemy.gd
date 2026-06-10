@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 80.0
+@export var SPEED = 80.0
 const GRAVITY = 800.0
 
 var direction = 1

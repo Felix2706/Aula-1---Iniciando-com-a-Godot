@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 
-const JUMP_VELOCITY = -550.0
+var JUMP = -400.0
 
-var SPEED = 300.0
+var SPEED = 100.0
 var is_dead = false
 var can_die = true
 
@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 	
 	# Pulo
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = JUMP
 	
 	# Movimento
 	var direction := Input.get_axis("left", "right")

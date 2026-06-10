@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://vqdsx0fnp436"]
+
+[ext_resource type="Script" uid="uid://b2u1jdf7n5omn" path="res://script/fary.gd" id="1_bt3f4"]
+[ext_resource type="Texture2D" uid="uid://cwe40k1b7cnyu" path="res://assets/craftpix-net-926878-free-platformer-game-tileset-pixel-art/PNG/Fairys.png" id="2_7n0a1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jiniq"]
+atlas = ExtResource("2_7n0a1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yo0c"]
+atlas = ExtResource("2_7n0a1")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qoa0q"]
+atlas = ExtResource("2_7n0a1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ldpcn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jiniq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yo0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qoa0q")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt3f4"]
+
+[node name="Fary" type="CharacterBody2D" unique_id=1614467748]
+script = ExtResource("1_bt3f4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1523211539]
+sprite_frames = SubResource("SpriteFrames_ldpcn")
+animation = &"walk"
+frame_progress = 0.8449822
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=913179802]
+shape = SubResource("RectangleShape2D_bt3f4")
+
+[node name="right" type="RayCast2D" parent="." unique_id=1070889383]
+target_position = Vector2(20, 7)
+
+[node name="left" type="RayCast2D" parent="." unique_id=1626919615]
+target_position = Vector2(-18, 7)

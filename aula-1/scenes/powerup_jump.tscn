@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d3csswb0b0tyg"]
+
+[ext_resource type="Script" uid="uid://csckwebewkbmw" path="res://script/powerup_jump.gd" id="1_p36c7"]
+[ext_resource type="Texture2D" uid="uid://buwhm1dkq8c0h" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/buttonBlue_pressed.png" id="2_u53pn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqqp3"]
+size = Vector2(20, 6)
+
+[node name="powerup_jump" type="Area2D" unique_id=208159478]
+script = ExtResource("1_p36c7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1701482050]
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("2_u53pn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2038925314]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_cqqp3")

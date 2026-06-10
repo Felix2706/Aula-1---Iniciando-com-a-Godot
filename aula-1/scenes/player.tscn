@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://dbtk761ntvlyr" path="res://script/irelia.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://br5worw18v5xy" path="res://assets/Fantasma_azuk-removebg-preview.png" id="2_g2els"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("2_g2els")
 region = Rect2(0, 350, 57, 70)
@@ -154,7 +153,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(23.5, 44.25)
+size = Vector2(23.5, 28)
 
 [node name="Player" type="CharacterBody2D" unique_id=506168754]
 script = ExtResource("1_onrkg")
@@ -162,7 +161,7 @@ script = ExtResource("1_onrkg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=719594781]
 texture_filter = 1
 position = Vector2(0, 1)
-scale = Vector2(1, 1.0333333)
+scale = Vector2(0.608, 0.628)
 sprite_frames = SubResource("SpriteFrames_d2wvv")
 animation = &"die"
 frame_progress = 0.80325574
@@ -170,7 +169,8 @@ frame_progress = 0.80325574
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2014944344]
 position = Vector2(0.894928, -7.434784)
 offset = Vector2(0, 3)
+zoom = Vector2(2.75, 2.75)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1457415239]
-position = Vector2(-2, 3.125)
+position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_hqtel")
