@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8pausemenu01"]
+
+[ext_resource type="Script" path="res://script/pause_menu.gd" id="1_pause"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_pause")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Overlay" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6)
+
+[node name="PausadoLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 200.0
+offset_right = 600.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 32
+text = "Pausado"
+horizontal_alignment = 1
+
+[node name="ContinuarButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 280.0
+offset_right = 620.0
+offset_bottom = 320.0
+text = "Continuar"
+
+[node name="MenuPrincipalButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 340.0
+offset_right = 620.0
+offset_bottom = 380.0
+text = "Menu Principal"
+
+[connection signal="pressed" from="Control/ContinuarButton" to="." method="_on_continuar_button_pressed"]
+[connection signal="pressed" from="Control/MenuPrincipalButton" to="." method="_on_menu_principal_button_pressed"]

@@ -1,0 +1,14 @@
+# Godot 4
+.godot/
+.import/
+export/
+export_web.zip
+*.tmp
+
+# macOS metadata from asset packs
+**/._*
+**/__MACOSX/
+
+# OS
+Thumbs.db
+desktop.ini

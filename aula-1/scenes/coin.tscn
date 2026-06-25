@@ -14,12 +14,13 @@ initial_velocity_max = 150.0
 gravity = Vector3(0, 98, 0)
 scale_min = 2.0
 scale_max = 4.0
-color = Color(1, 1, 0, 1)
+color = Color(1, 0.85, 0.2, 1)
 
 [node name="Coin" type="Area2D" unique_id=144094959]
 script = ExtResource("1_0t63x")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=50562369]
+scale = Vector2(0.55, 0.55)
 texture = ExtResource("2_v7riw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1755880270]
